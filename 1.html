@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>firstphoto</title> 
+	<meta charset="UTF-8"> 
+	<meta name="blog" content="landing page">
+	<meta name="owned by" content="template"> 
+	<meta name="keywords" content="HTML, CSS,landing,resolutions,template">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<script src="https://kit.fontawesome.com/53d3f12009.js" crossorigin="anonymous"></script>  
+	<style type="text/css"> 
+		body{
+			
+			background-color: black; 
+
+		} 
+		.wrapper{
+			background-image: url("1.jpg"); 
+			width: 600px; 
+			height: 600px; 
+			margin-left: auto; 
+			margin-right:auto; 
+			
+			
+		} 
+		#photo{
+			margin-left: 590px;
+			margin-top: 350px; 
+			transform: scale(3);
+		}  
+		#photoback{
+			margin-right:700px;
+			margin-top: 20px; 
+			transform: scale(3);
+		} 
+		@media(max-width: 600px){
+			.wrapper{
+				margin-top: 18rem; 
+				margin-left: 1.5rem; 
+
+
+				
+			} 
+			#photo{
+				margin-top: 330px;
+
+				margin-left: 565px;
+				
+				padding-left: 3px; 
+				transform: scale(3.5);
+
+			} 
+			#photoback{ 
+				margin-right:600px;
+				margin-top: 1px; 
+				 
+				padding-right: 3px; 
+				transform: scale(3.5);
+
+			} 
+			
+			
+		}
+
+
+	</style>
+</head> 
+<body> 
+	<div class="wrapper"> 
+		<div class='foward'> 
+		    <a href="2.html">
+				<i class="fas fa-chevron-right fa-2x;" style="background-color: white;color:black" id='photo'></i> 
+
+			</a> 
+		</div> 
+		<div class='backward'> 
+		    <a href="index.html">
+				<i class="fas fa-chevron-left fa-2x;" style="background-color: white;color:black" id='photoback'></i> 
+			</a> 
+		</div> 
+		
+
+
+
+	</div>
+
+</body>
+</html>

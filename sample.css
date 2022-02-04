@@ -1,0 +1,53 @@
+.wrapper{
+	height: 600px; /*an extra check to make sutre the container has same image size*/
+	width:600px; 
+	margin-left:auto; /*centers the content,tet align works mostly on texts*/
+	margin-right:auto;  
+	overflow:hidden; /*hides the things which go out of the viewport*/ 
+	text-align: center; /*for the display butons*/
+} 
+.image-container{
+	width: 3000px; /*5 images do total width=5*600px*/
+	height: 600px; 
+	position: relative; 
+	transition-property: left;  /*general*/
+	transition-duration: 2s; 
+	-webkit-transition:left 2s; /*for transition in chrome*/ 
+	-moz-transition:left 2s; /*for mozilla firefox*/ 
+	-o-transition:left 2s;/*for old browsers*/
+}  
+.slider-image{
+	float:left; /*shift it to the left*/ 
+	margin:0px; 
+	padding:0px;
+} 
+.btn-container{
+	position: relative; 
+	top: -20px; /*-20px:20px towards the top;+20px:20px away from the top;*/ 
+}
+.silder-button{
+	height:10px; /*made a little square of side 10px*/
+	width: 10px; 
+	color: pink; /*of yellow colour*/
+	border-radius:5px; /*molded it into circle*/
+	display:inline-block; /*presented it side-by-side*/
+}
+#slider-image-1: target ~ .image-container{ 
+	left:0px;
+} 
+#slider-image-2: target ~ .image-container{ 
+	left:-600px;
+
+} 
+#slider-image-3: target ~ .image-container{ 
+	left:-1200px;
+
+} 
+#slider-image-4: target ~ .image-container{ 
+	left:-1800px;
+
+} 
+#slider-image-5:target ~ .image-container{ 
+	left:-2400px;
+
+}
